@@ -4,6 +4,8 @@ import lombok.EqualsAndHashCode;
 
 @EqualsAndHashCode
 public class InsertionSort implements Sort {
+
+    @Override
     public int[] sortTable(int[] tableToSort) {
         for (int i = 1; i < tableToSort.length; i++) {
             int tmp = tableToSort[i];
@@ -18,4 +20,3 @@ public class InsertionSort implements Sort {
     return tableToSort;
     }
 }
-
