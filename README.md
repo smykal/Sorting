@@ -23,4 +23,7 @@ $
 ```
 
 ###Examples of complexity:
-![Algorithm schema](Complexity.png)
+![Algorithm Big O schema](Complexity.png)
+
+###Description for variables in BinarySearch
+![Variables Description](BinarySearch.PNG)
