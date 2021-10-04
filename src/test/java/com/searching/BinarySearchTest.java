@@ -14,7 +14,7 @@ class BinarySearchTest {
         BinarySearch binarySearch = new BinarySearch();
 
         //when
-        int actual = binarySearch.binarySearch(table,element);
+        int actual = binarySearch.search(table,element);
 
         //then
         assertEquals(actual,2);
@@ -28,7 +28,7 @@ class BinarySearchTest {
         BinarySearch binarySearch = new BinarySearch();
 
         //when
-        int actual = binarySearch.binarySearch(table,element);
+        int actual = binarySearch.search(table,element);
 
         //then
         assertEquals(actual,0);
@@ -42,7 +42,7 @@ class BinarySearchTest {
         BinarySearch binarySearch = new BinarySearch();
 
         //when
-        int actual = binarySearch.binarySearch(table,element);
+        int actual = binarySearch.search(table,element);
 
         //then
         assertEquals(actual,5);
@@ -56,7 +56,7 @@ class BinarySearchTest {
         BinarySearch binarySearch = new BinarySearch();
 
         //when
-        int actual = binarySearch.binarySearch(table,element);
+        int actual = binarySearch.search(table,element);
 
         //then
         assertEquals(actual,6);
@@ -66,10 +66,10 @@ class BinarySearchTest {
         //given
         int[] table = {1,3,5,7,9,11,13};
         int element = 99;
-        BinarySearch binarySearch = new BinarySearch();
-
+        Search binarySearch = new BinarySearch();
+        
         //when
-        int actual = binarySearch.binarySearch(table,element);
+        int actual = binarySearch.search(table,element);
 
         //then
         assertEquals(actual,-1);

@@ -1,5 +1,5 @@
 package com.searching;
 
 public interface Search {
-    boolean search(int[] tableToSearch, int element);
+    int search(int[] tableToSearch, int element);
 }

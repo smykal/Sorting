@@ -1,7 +1,9 @@
 package com.searching;
 
-public class BinarySearch {
-    public int binarySearch(int[] table, int element) {
+public class BinarySearch implements Search {
+
+    @Override
+    public int search(int[] table, int element) {
         int low = 0;
         int high = table.length - 1;
 
