@@ -1,23 +1,24 @@
 package com.searching;
 
 public class BinarySearch {
-    public boolean binarySearch(int[] table, int element) {
+    public int binarySearch(int[] table, int element) {
         int low = 0;
         int high = table.length - 1;
-        int mid = (low + high);
+
+        int elementPos = -1;
+
         while (low <= high) {
-            int value = table[mid];
-            if (value == element) {
-            } else if (value > element) {
+            int mid = (low + high) / 2;
+            if (table[mid] == element) {
+                elementPos = mid;
+                break;
+            } else if (table[mid] > element){
                 high = mid - 1;
-            } else {
-                low = mid + 1;
+            } else if (table[mid] < element) {
+                low = mid +1;
             }
         }
-        if (table[mid] == element){
-            return true;
-        } else {
-            return false;
-        }
+
+    return elementPos;
     }
 }
