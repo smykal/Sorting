@@ -18,4 +18,12 @@ public class RecursionMethods {
             return 1;
         }
     }
+
+    public int sumTable(int[] table, int n) {
+        if(n > 0) {
+            return table[n-1] + sumTable(table, n-1);
+        } else {
+            return 0;
+        }
+    }
 }

@@ -11,5 +11,8 @@ public class Main {
         RecursionMethods recursionMethods = new RecursionMethods();
         System.out.println("sum: " + recursionMethods.sum(10));
         System.out.println("factorial: " + recursionMethods.factorial(6));
+
+        int[] table = {1,3,5,7,9};
+        System.out.println("sum table: " + recursionMethods.sumTable(table,5));
     }
 }
