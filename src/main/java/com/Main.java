@@ -3,6 +3,9 @@ package com;
 import com.generating.GeneratingTable;
 import com.recursion.RecursionMethods;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         GeneratingTable generatingTable = new GeneratingTable();
@@ -14,5 +17,13 @@ public class Main {
 
         int[] table = {1,3,5,7,9};
         System.out.println("sum table: " + recursionMethods.sumTable(table,5));
+
+        List<String> list = new ArrayList();
+        list.add("Marta");
+        list.add("Monika");
+        list.add("Kinga");
+        list.add("Asia");
+
+        recursionMethods.showList(list,4);
     }
 }
