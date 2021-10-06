@@ -1,6 +1,5 @@
-package com.com.generating;
+package com.generating;
 
-import com.com.generating.GeneratingTable;
 import org.junit.jupiter.api.Test;
 
 import java.util.Random;
