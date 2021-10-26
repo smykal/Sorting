@@ -36,4 +36,18 @@ public class RecursionMethods {
         } else
             System.out.println("end");
     }
+
+    public int binarySearch(int[] table, int l, int r, int e) {
+        if (r >= l) {
+            int mid = l + (r - l) / 2;
+            if (table[mid] == e)
+                return mid;
+
+            if (table[mid] > e)
+                return binarySearch(table, l, mid - 1, e);
+
+            return binarySearch(table, mid + 1, r, e);
+        }
+        return -1;
+    }
 }

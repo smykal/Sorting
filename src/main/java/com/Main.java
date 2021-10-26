@@ -2,28 +2,24 @@ package com;
 
 import com.generating.GeneratingTable;
 import com.recursion.RecursionMethods;
+import com.sorting.BubbleSort;
+import com.sorting.Sort;
+import com.time.TimeCounter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        GeneratingTable generatingTable = new GeneratingTable();
-        int[] ta = generatingTable.generatingTable(14);
+//
 
-        RecursionMethods recursionMethods = new RecursionMethods();
-        System.out.println("sum: " + recursionMethods.sum(10));
-        System.out.println("factorial: " + recursionMethods.factorial(6));
+        Main main = new Main();
+        main.test();
+    }
 
-        int[] table = {1,3,5,7,9};
-        System.out.println("sum table: " + recursionMethods.sumTable(table,5));
-
-        List<String> list = new ArrayList();
-        list.add("Marta");
-        list.add("Monika");
-        list.add("Kinga");
-        list.add("Asia");
-
-        recursionMethods.showList(list,4);
+    private void test(){
+        TimeCounter timeCounter = new TimeCounter();
+        Sort bubbleSort = new BubbleSort();
+        timeCounter.sortingTimeCounter(bubbleSort::sortTable);
     }
 }
