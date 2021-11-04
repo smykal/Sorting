@@ -10,6 +10,9 @@ public class QuickSort implements Sort {
     private void quickSort(int[] tableToSort, int left, int right) {
         if (left <right) {
             int pivot = partition(tableToSort, left, right);
+
+            quickSort(tableToSort, left, pivot - 1);
+            quickSort(tableToSort,pivot +1, right);
         }
     }
 
