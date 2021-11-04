@@ -14,6 +14,20 @@ public class QuickSort implements Sort {
     }
 
     private int partition(int[] tableToSort, int left, int right) {
-        return 0;
+        int pivot = tableToSort[right];
+        int elementLowerThanPivot = left - 1;
+
+        for (int i = 0; i < right; i++) {
+            if (tableToSort[i] <= pivot) {
+                elementLowerThanPivot++;
+                int tmp = tableToSort[elementLowerThanPivot];
+                tableToSort[elementLowerThanPivot] = tableToSort[i];
+                tableToSort[i] = tmp;
+            }
+        }
+        int tmp = tableToSort[elementLowerThanPivot + 1];
+        tableToSort[elementLowerThanPivot +1] = tableToSort[right];
+        tableToSort[right] = tmp;
+        return elementLowerThanPivot + 1;
     }
 }
